@@ -48,11 +48,11 @@
 
 
 // dollar sign
-var numRows = prompt("how many rows?");
-var char = numRows*2 - 1;
-
-for(var row = 0; row < numRows; row++) {
-  var spaces = numRows - row - 1
-  var dollar = row*2 + 1
-  console.log(" ".repeat(spaces) + "$".repeat(dollar) + " ".repeat(spaces))
-}
+// var numRows = prompt("how many rows?");
+// var char = numRows*2 - 1;
+//
+// for(var row = 0; row < numRows; row++) {
+//   var spaces = numRows - row - 1
+//   var dollar = row*2 + 1
+//   console.log(" ".repeat(spaces) + "$".repeat(dollar) + " ".repeat(spaces))
+// }
