@@ -64,7 +64,20 @@ if (destination === interchange){
 }
 var indexes = [indexStart, indexEnd];
 
+
+
+
 // switching lines
+// check if the index's are the right way
+
+if(indexStart > indexEnd){
+  indexes = indexes.reverse();
+  var trip = startLine.slice(indexes[0], indexes[1] + 1).reverse();
+} else {
+  var trip = startLine.slice(indexes[0], indexes[1] + 1);
+}
+// check if the index's are the right way
+
 
 // loop through the array from the origin to richmond station and stop
 if(startLine !== endLine) {
@@ -78,29 +91,19 @@ if(startLine !== endLine) {
 }
 
 
-
-
-// check if the index's are the right way
-
-if(indexStart > indexEnd){
-  indexes = indexes.reverse();
-  var trip = startLine.slice(indexes[0], indexes[1] + 1).reverse();
-} else {
-  var trip = startLine.slice(indexes[0], indexes[1] + 1);
-}
+// // check if the index's are the right way
 
 
 
 var twoLineTrip = firstLine.pop();
 twoLineTrip = firstLine.concat(secondLine);
 
+// checking which line to print
 if (startLine === endLine) {
 console.log(trip.join(" -----> "));
-}else {
+} else {
 console.log(twoLineTrip.join(" -----> "))
 }
-//  the interchange problem
-
 
 
 // the total amount of stops

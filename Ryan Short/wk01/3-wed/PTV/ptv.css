@@ -1,0 +1,77 @@
+
+#background {
+  margin: 0;
+  background-color: #bc3434;
+  border-radius: 4px;
+  width: auto;
+}
+
+#ptvHeading {
+   font-family: 'Roboto Mono', monospace;
+   font-size: 70px;
+   padding-left: 40px;
+   margin-top: 10px;
+
+}
+
+span {
+  margin-left: 15px;
+  color: white;
+
+}
+
+img {
+  margin-top: 5px;
+  margin-left: 20px;
+  width: 800px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+p {
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+div.originBox {
+
+  background-color: #545957;
+  
+  border: 3px dashed black;
+  border-radius: 3px;
+}
+
+#originInput {
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-left: 40px;
+  padding-left: 10px;
+  height: 30px;
+  font-size: 20px;
+}
+
+#endInput {
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-left: 40px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  font-size: 20px;
+}
+
+#journeyDisplay {
+  background-color: #939aa5;
+  border: #939aa5;
+  height: 300px;
+
+}
+
+#journeyMessage {
+  padding-top: 10px;
+}
