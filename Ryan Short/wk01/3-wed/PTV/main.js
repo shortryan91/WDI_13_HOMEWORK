@@ -11,26 +11,32 @@ var secondLine = [];
 
 
 
-// find the origin station
-
+// find the origin line
 var origin = prompt('pick your current station');
+// to find richmond and not enter the loop
 if (origin === interchange) {
   console.log("your current location is: " + origin)
 } else if (origin !== interchange ) {
+  // finding the right line
   for(var i = 0; i < trainLines.length; i++) {
+    // searching trainLines for correct line
     if(trainLines[i].includes(origin)) {
+
       var startLine = trainLines[i];
+
       console.log('your current location is: ' + origin)
     }
   }
 }
 
 
-// // find the destination
+// // find the destination line
 var destination = prompt('pick where you would like to go?');
+// to find richmond and not enter the loop
 if (destination === interchange) {
   console.log("your current destination is: " + destination);
 } else if (destination !== interchange) {
+  // finding the right line
     for( var i = 0; i < trainLines.length; i++) {
       if (trainLines[i].includes(destination)) {
         var endLine = trainLines[i];
@@ -94,7 +100,7 @@ if(startLine !== endLine) {
 // // check if the index's are the right way
 
 
-
+// popping to eliminate second richmond
 var twoLineTrip = firstLine.pop();
 twoLineTrip = firstLine.concat(secondLine);
 
