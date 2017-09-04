@@ -1,0 +1,114 @@
+/*basic */
+body {
+  background-color: #d4d4d6;
+  width: 1200px;
+}
+
+
+
+
+/*the header images*/
+
+header {
+  margin: 0;
+  display: block;
+  background-image: url(../images/background.jpg);
+  background-repeat: repeat-x;
+}
+
+#logo {
+display: block;
+margin: auto;
+margin-bottom: 60px;
+}
+
+
+
+
+/*mainArticle*/
+.mainArticle {
+  width: 650px;
+  display: inline-block;
+  background-color: white;
+  margin: 0 30px;
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+  padding-left: 25px;
+}
+
+p {
+  padding-left: 20px;
+  width: 600px;
+}
+
+.footArt {
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 4px;
+  margin: 0;
+}
+
+.footArt2 {
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 4px;
+  margin-top: 0px;
+}
+
+span {
+  color: #ff8c21;
+}
+
+.dottedline {
+  width: 600px;
+  border: 1px dotted black;
+  margin-bottom: 4px;
+}
+
+.solid {
+    width: 600px;
+    border-top: 1px solid #8c8b8b;
+    margin-bottom: 60px;
+
+}
+
+/*aside */
+
+aside {
+  display: inline-block;
+  background-color: white;
+  width:300px;
+  vertical-align: top;
+}
+
+aside ul{
+  margin-top: 40px;
+}
+
+li {
+  margin-top: 5px;
+  list-style-type: none;
+}
+
+aside img {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+#submit {
+  margin-bottom: 60px;
+}
+
+
+
+
+
+/*footer images*/
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
