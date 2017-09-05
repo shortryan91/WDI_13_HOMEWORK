@@ -1,0 +1,148 @@
+/*basic*/
+body {
+  width: 100%;
+  font-family: 'arial';
+  font-weight: 100;
+}
+
+p {
+  color: #c9cacc;
+  margin-top: 10px;
+}
+
+/*mainpage*/
+#mainPage {
+  margin: 60px;
+  /*border: 1px solid black;*/
+}
+
+/*header*/
+h1{
+  display: inline-block;
+  font-size: 40px;
+  margin-left: 23px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  color: #c40000;
+}
+
+header h2 {
+  display: inline-block;
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #e5e5e5;
+}
+
+
+nav ul {
+  margin-left: 20px;
+}
+
+
+nav ul li {
+  font-size: 20px;
+  display: inline-block;
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 16.2%;
+  padding: 15px 3px;
+
+}
+
+.continue {
+  display: inline-block;
+  font-size: 20px;
+  width: 100%;
+  text-align: right;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  color: #911d1d;
+}
+
+
+/*main section*/
+
+section {
+  /*border: 1px solid red;*/
+  display: inline-block;
+  width: 65%;
+  margin: 20px;
+}
+
+article h2 {
+  font-size: 30px;
+
+}
+
+article p {
+  float: right;
+}
+
+span.letter {
+  float: left;
+  font-size: 86px;
+  text-align: left;
+}
+
+.artheader {
+  margin-bottom: 15px;
+
+}
+
+.date {
+  margin-top: 20px;
+  color: #e5e5e5;
+
+}
+
+
+/*aside*/
+aside {
+  /*border: 1px solid blue;*/
+  margin-left: 20px;
+  margin-top: 65px;
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+}
+
+aside img {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+aside h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #bababa;
+}
+
+aside ul li {
+  font-size: 17px;
+  margin-left: 15px;
+  color: #ed7474;
+}
+
+
+
+/*footer*/
+footer {
+  /*border: 1px solid green;*/
+
+}
+
+
+footer ul li {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 15px;
+  color: red;
+
+}
+
+footer p {
+  margin-top: 20px;
+  margin-left: 15px;
+}
