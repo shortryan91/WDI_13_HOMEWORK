@@ -18,7 +18,6 @@ var checkingDepositB = document.querySelector("#checkingDB");
 
 
 
-
 var deposit = function() {
   var total = +savingAmount.textContent + +savingInput.value;
   savingAmount.textContent = total;
@@ -46,3 +45,8 @@ var withdraw = function() {
 
 checkingWithdrawB.addEventListener('click', withdraw);
 checkingDepositB.addEventListener('click', deposit);
+
+
+if () {
+
+}
