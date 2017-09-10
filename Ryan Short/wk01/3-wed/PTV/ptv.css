@@ -1,77 +1,157 @@
 
-#background {
-  margin: 0;
-  background-color: #bc3434;
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.pageContainer {
+  /*border: 2px solid black;*/
+  width: 90%;
+  position: relative;
+  box-shadow: 2px 2px 2px 2px black;
+}
+/*header*/
+header {
+  border: 2px solid black;
   border-radius: 4px;
-  width: auto;
+  background-color: #4f5359;
 }
 
-#ptvHeading {
-   font-family: 'Roboto Mono', monospace;
-   font-size: 70px;
-   padding-left: 40px;
-   margin-top: 10px;
+h1 {
+  font-size: 60px;
+  display: inline-block;
+  margin-left: 100px;
+  color: #f5f5f5;
+}
+
+.v {
+  color: #e84937;
+}
+
+nav {
+  display: inline-block;
+  float: right;
+  margin-right: 30px;
+  margin-top: 20px;
 
 }
 
-span {
-  margin-left: 15px;
-  color: white;
+nav ul li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 3px;
+  color: #fff;
+  transition: 1s;
+}
 
+nav ul li:hover {
+  background-color: white;
+  color: #e84937;
+  border-radius: 2px;
+}
+/*End of header*/
+
+/*start of the add bar*/
+.adBanner {
+  border: 2px solid black;
+  background-color: black;
+  width: 100%;
+}
+
+#ad1 {
+  border: 2px solid black;
+  display: inline-block;
+  width: 48%;
 }
 
 img {
-  margin-top: 5px;
-  margin-left: 20px;
-  width: 800px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  max-width: 100%;
+  max-height: 100%;
 }
 
-p {
-  margin-left: 40px;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  font-family: 'Roboto Mono', monospace;
-}
-
-div.originBox {
-
-  background-color: #545957;
-  
-  border: 3px dashed black;
-  border-radius: 3px;
-}
-
-#originInput {
+#ad2 {
   border: 2px solid black;
-  border-radius: 4px;
-  margin-left: 40px;
-  padding-left: 10px;
-  height: 30px;
-  font-size: 20px;
+  display: inline-block;
+  width: 51.5%;
+}
+/*End of the ad bar*/
+
+/*start of the main page display*/
+#mainPageDisplay {
+  border: 2px solid black;
+  background-color:  #4f5359;
+  display: none;
 }
 
-#endInput {
-  border: 2px solid black;
+.jPlannerBtn {
+  font-size: 30px;
+  background-color: grey;
   border-radius: 4px;
+  display: inline-block;
+  margin: 20px 0 0 20px;
+}
+
+select {
+  font-size: 30px;
+  float: right;
+  margin: 20px 40px 0 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 5px;
+}
+
+#yourLineNotices {
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 200px;
+  width: 90%;
   margin-left: 40px;
-  padding-left: 10px;
   margin-bottom: 10px;
-  height: 30px;
+  background-color: #f5f5f5;
+}
+
+/*End of main page display*/
+ #journeyPanner {
+  display: block;
+  height:300px;
+
+}
+
+#journeyContainer {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: crimson;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  /*margin-bottom: 20px;*/
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+h3{
+  color: white;
+}
+
+input {
   font-size: 20px;
+  color: black;
 }
 
-#journeyDisplay {
-  background-color: #939aa5;
-  border: #939aa5;
-  height: 300px;
-
+.submitBtn {
+  font-size: 20px;
+  margin-left: 30%;
 }
 
-#journeyMessage {
-  padding-top: 10px;
-}
+
+/**/

@@ -2,32 +2,51 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <link rel="stylesheet" href="ptv.css">
 
     <title>PTV jounrey</title>
   </head>
   <body>
-  <div id="background">
-    <h1 id="ptvHeading">PT<span>V</span></h1>
-    <div id="myKi"
+  <div class="pageContainer">
+    <div class="page">
+      <!-- header -->
+      <header>
+        <h1>PT<span class="v">V</span></h1>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>TrainLines</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </header>
+      <!-- ad banner -->
+      <section class="adBanner">
+        <div id="ad1"><img src="dumbWays.png" alt="dumb ways to die"></div>
+        <div id="ad2"><img src="MykiFines.jpg" alt="myki"></div>
+      </section>
 
-    </div>
-    <div class="originBox">
-      <p>Enter your location</p>
-      <input id="originInput" type="text" placeholder="please enter station">
-      <p>Enter your destination</p>
-      <input id="endInput" type="text" placeholder="please enter station">
-      <button>show Journey</button>
-    </div>
-    <div id="MYKI">
-    <img  src="http://www.cdcvictoria.com.au/images/image-slider/main1.9.jpg" alt="">
-    </div>
-
-  <div id="journeyDisplay">
-      <p id="journeyMessage">This is your journey</p>
-      <div>
-
-      </div>
+      <section id="mainPageDisplay">
+        <button class='jPlannerBtn'>Journey Planner</button>
+        <select name="linePicker" id="linePicker">
+          <option value="Alamein">Alamein</option>
+          <option value="GlenWaverly">GlenWaverly</option>
+          <option value="Sandringham">Sandringham</option>
+        </select>
+        <h2>Your line Notices</h2>
+        <section id="yourLineNotices"></section>
+      </section>
+      <!-- jounrey planner section -->
+      <section id="journeyPlanner">
+        <div id="journeyContainer">
+          <h3>Enter your location</h3>
+          <input type="text" name="" value="">
+          <h3>Enter you destination</h3>
+          <input type="text" name="" value="">
+          <button class="submitBtn" type="button" name="button">Submit jounrey</button>
+        </div>
+      </section>
     </div>
   </div>
     <!-- <script src="main.js"></script> -->
