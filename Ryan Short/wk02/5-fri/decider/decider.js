@@ -49,8 +49,8 @@ var coinFlip = function() {
     console.log('TAILS');
   }
   tallyCount();
-  Winner();
   display();
+  Winner();
 }
 
 

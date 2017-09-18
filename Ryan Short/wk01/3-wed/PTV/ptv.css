@@ -121,26 +121,27 @@ h2 {
 }
 
 /*End of main page display*/
- #journeyPanner {
-  display: block;
-  height:300px;
-
+#journeyPlanner {
+  display: none;
+  height: 1000px;
 }
 
 #journeyContainer {
   border: 2px solid black;
   border-radius: 10px;
-  background-color: crimson;
+  background-color: #e84937;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 5%;
   /*margin-bottom: 20px;*/
   padding: 20px;
   padding-bottom: 50px;
+  height: 400px;
 }
 
 h3{
   color: white;
+  font-size: 28px;
 }
 
 input {
@@ -151,7 +152,33 @@ input {
 .submitBtn {
   font-size: 20px;
   margin-left: 30%;
+  background-color: black;
+  color : white;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 
-/**/
+/*end of Enter journeyPlanner page*/
+
+/*start of show journey page*/
+#showJounreyPage {
+  display: none;
+  height: 400px;
+}
+
+.JourneyBox {
+  border: 2px solid black;
+  height: 100px;
+  margin-top: 20px;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
+
+/*end of show jounry page*/
+
+/*start of contact page*/
+#contactPage {
+  display: block;
+}

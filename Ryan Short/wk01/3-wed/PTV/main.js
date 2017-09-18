@@ -1,11 +1,11 @@
 // PTV
-var Alamein =['Flinders Street', 'Richmond', 'East Richmond', 'Burnley', 'Hawthorn', 'Glenferrie'];
-var GlenWaverly =['Flagstaff', 'Melbourne Central', 'Parliament', 'Richmond', 'Kooyong','Tooronga'];
-var Sandringham = ['Southern Cross', 'Richmond', 'South Yarra', 'Prahran','Windsor'];
+var Alamein =['flinders street', 'richmond', 'east richmond', 'burnley', 'hawthorn', 'glenferrie'];
+var GlenWaverly =['flagstaff', 'melbourne central', 'parliament', 'richmond', 'kooyong','tooronga'];
+var Sandringham = ['southern cross', 'richmond', 'south yarra', 'prahran','windsor'];
 
 var trainLines = [Alamein, GlenWaverly, Sandringham];
 
-var interchange = 'Richmond';
+var interchange = 'richmond';
 var firstLine = [];
 var secondLine = [];
 
