@@ -24,6 +24,7 @@ require 'pry'
 # days.unshift('sunday')
 
 # days_of_the_week = ["monday","tuesday","wednesday","thursday","friday",["saturday","sunday"]]
+
 # days_of_the_week.pop
 # days_of_the_week.sort
 
