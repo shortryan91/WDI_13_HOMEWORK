@@ -19,7 +19,7 @@ users = {
 users['Jonathan'][:twitter]
 
 # 2.How would you add the number 7 to Erik's favorite numbers?
-users['Erik'][:favorite_numbers]<< 7
+users['Erik'][:favorite_numbers] << 7
 
 #3. How would you add yourself to the users hash?
 users["Ryan"] = {:twitter => "ryan", :favorite_numbers => [
@@ -29,12 +29,11 @@ users["Ryan"] = {:twitter => "ryan", :favorite_numbers => [
 users['Erik'][:favorite_numbers]
 
 # 5.How would you return the smallest of Erik's favorite numbers?
-users['Erik'][:favorite_numbers].last
+users['Erik'][:favorite_numbers].min
 
 #6. How would you return an array of Anil's favorite numbers that are also even?
-numbers = users['Anil'][:favorite_numbers]
-anils_even_numbers = numbers.select do |num|
-  num % 2 == 0
+numbers = users['Anil'][:favorite_numbers].select do |num|
+  num.even?
 end
 
 # 7. How would you return an array of the favorite numbers common to all users?
@@ -45,10 +44,10 @@ end
 common_number.flatten!.
 
 # 8. How would you return an array containing all users' favorite numbers, sorted, and excluding duplicates?
-# common_number = []
-# users.each_value do |name|
-#  common_number.push(name[:favorite_numbers])
-#  common_number.flatten!.sort!.uniq!
-# end
+common_number = []
+users.each_value do |name|
+ common_number.push(name[:favorite_numbers])
+end
+puts common_number.flatten.sort.uniq
 
 binding.pry
