@@ -11,3 +11,13 @@
   <li id="Plot">Plot: <%= @result['Plot'] %></li>
   <img src="<%= @result['Poster'] %>">
 </ul>
+
+<form class="" action="/leave_comment" method="post">
+  <input type="hidden" name="title" value="<%= @result['Title'] %>">
+  <textarea id="comment" name="comment"></textarea>
+  <button type="submit">Post</button>
+</form>
+
+<% @comments.each do |comment| %>
+  <p><%= comment %></p>
+<%end%>

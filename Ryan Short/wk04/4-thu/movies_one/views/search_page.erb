@@ -3,8 +3,13 @@
 <h1>TOP RESULTS</h1>
 
 <ul>
-  <% @search['Search'].each do |movie| %>
-    <h1><%= movie['Title']%></h1>
-    <a  href="/profile?title=<%= movie['Title']%>"><img src="<%= movie['Poster'] %>"></a>
-  <% end %>
+  
+  <%if @search['Error'] == "Movie not found!"%>
+    <h1>NO Results Found</h1>
+  <%else%>
+    <% @search['Search'].each do |movie| %>
+      <h1><%= movie['Title']%></h1>
+      <a  href="/profile?title=<%= movie['Title']%>"><img src="<%= movie['Poster'] %>"></a>
+    <% end %>
+  <%end%>
 </ul>
