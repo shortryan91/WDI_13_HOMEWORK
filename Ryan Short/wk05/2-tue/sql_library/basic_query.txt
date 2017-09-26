@@ -1,0 +1,47 @@
+-- BASIC QUERIES
+
+-- Unless otherwise stated, all queries should return all columns
+
+1. Get all information about all authors
+  SELECT * FROM authors;
+
+2. Get just the name and birth year of all authors
+SELECT name, birth_year FROM authors
+
+3. Get all authors born in the 20th century or later
+SELECT * FROM authors WHERE birth_year > 1900;
+
+4. Get all authors born in the USA
+SELECT * FROM authors WHERE nationality = 'United States of America';
+
+5. Get all books published on 1985
+SELECT * FROM books WHERE publication_date = 1985;
+
+6. Get all books published before 1989
+SELECT * FROM books WHERE publication_date < 1989;
+
+7. Get just the title of all books.
+SELECT title FROM books;
+
+8. Get just the year that 'A Dance with Dragons' was published
+SELECT * FROM author WHERE title = 'A Dance with Dragons'
+
+9. Get all books which have `the` somewhere in their title (hint, look up LIKE/ILIKE)
+ SELECT * FROM books WHERE title LIKE '%the%';
+
+10. Add yourself as an author
+INSERT INTO authors(name, nationality, birth_year) VALUES ('Ryan Short', 'Australia', 1991);
+
+11. Add two books that you'd like to write (you can hard-code your id as the author id)
+INSERT INTO books(title, publication_date, author_id) VALUES ('coding for dummies', '2000', 9),('where's wally', '2000', 9);
+
+
+12. Update one of your books to have a new title
+UPDATE book SET title = 'Where's waldo?', publication_date = 1990 WHERE title = 'Where's wally';
+
+13. Delete your books
+DELETE FROM books WHERE title = 'Where's waldo?;
+DELETE FROM books WHERE title = 'coding for dummies';
+
+14. Delete your author entry
+DELETE FROM authors WHERE name = 'Ryan Short';

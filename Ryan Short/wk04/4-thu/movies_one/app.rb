@@ -41,3 +41,11 @@ post '/leave_comment' do
 
   redirect "/profile?title=#{params[:title]}"
 end
+
+get '/about' do
+  erb :about
+end
+
+get '/donate' do
+  erb :donate
+end

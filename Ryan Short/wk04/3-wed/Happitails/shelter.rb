@@ -62,14 +62,14 @@ case  choice
         @shelter_animals.push(new_animal)
       end
   when 5
-    puts "are you sure you want to adopt an animal? (yes/no)"
+    puts "are you sure you want to give away your animal? (yes/no)"
     answer = gets.chomp
     if answer == 'yes'
-    # take a pet from the client and place it into the animals array
+    # take a pet from the client objects pet array and place it into the animals array
       puts "enter your pets name"
       pet_name = gets.chomp
-      # puts "enter your name"
-      # client = gets.chomp
+      puts "enter your name"
+      client = gets.chomp
       def adopt_animal (pet_name)
         @shelter_animals.select do |animal_name|
           pet_being_adopted = animal_name.name == pet_name

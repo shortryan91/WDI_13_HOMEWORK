@@ -1,0 +1,25 @@
+
+body {
+  background-color: mistyrose;
+}
+
+nav {
+  background-color: #fff;
+  border: 2px solid black;
+}
+
+
+input {
+  font-size: 30px;
+
+}
+
+.details {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  margin-top: 10px;
+
+}
