@@ -1,0 +1,25 @@
+
+
+
+<h1><%= @result['Title'] %></h1>
+
+<ul class= "details">
+
+  <li>Year: <%= @result['Year'] %></li>
+  <li>Rating: <%= @result['Rated'] %></li>
+  <li>Year Released: <%= @result['Released'] %></li>
+  <li>Runtime: <%= @result['Runtime'] %></li>
+  <li>Genre: <%= @result['Genre'] %></li>
+  <li id="Plot">Plot: <%= @result['Plot'] %></li>
+  <img src="<%= @result['Poster'] %>">
+</ul>
+
+<form class="" action="/leave_comment" method="post">
+  <input type="hidden" name="title" value="<%= @result['Title'] %>">
+  <textarea id="comment" name="comment"></textarea>
+  <button type="submit">Post</button>
+</form>
+
+<% @comments.each do |comment| %>
+  <p><%= comment %></p>
+<% end %>

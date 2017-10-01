@@ -1,0 +1,14 @@
+<h1>cars spotted around town</h1>
+
+<a href="/car_list/new">Add a new car</a>
+<% @cars.each do |car| %>
+<section>
+  <h1>
+    <a href="/car_list/<%= car.id %>">
+    <%= car.make %>
+    </a>
+  </h1>
+  <h3><%= car.year %></h3>
+  <img src="<%= car.image_url %>" alt="">
+</section>
+<%end%>
