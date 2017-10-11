@@ -1,0 +1,12 @@
+
+
+<form action="/comments/<%= @comment.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <input type="hidden" name="comment.id" value="<%= @comment.id%>">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <label for="">comment</label>
+  <textarea name="name" rows="8" cols="80"><%= @comment.name%></textarea>
+
+  <button>update</button>
+</form>

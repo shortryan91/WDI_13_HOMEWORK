@@ -1,0 +1,16 @@
+
+<H1>ALL DISHES</H1>
+
+<a href="/dishes/new">New Dish</a>
+
+<% @dishes.each do |dish| %>
+<a href="/dishes/<%= dish.id %>"><%= dish.name %></a>
+<image src="<%= dish.image%>"></image>
+
+<form action="/dishes/<%= dish.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <button>delete</button>
+
+</form>
+<% end %>

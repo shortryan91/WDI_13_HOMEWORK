@@ -1,0 +1,14 @@
+
+<h2>Edit your dish</h2>
+
+
+<form action="/dishes/<%= @dish.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+<label for="">Name</label>
+  <input type="text" name="name" value="<%= @dish.name %>">
+
+  <label for="">Image</label>
+  <textarea name="image" rows="8" cols="80"><%= @dish.image%></textarea>
+  <button>update</button>
+</form>
